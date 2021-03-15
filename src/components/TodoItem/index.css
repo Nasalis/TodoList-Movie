@@ -1,0 +1,77 @@
+.movieContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 95%;
+    padding: 4px;
+    margin: 1rem auto;
+    border-bottom: 1px solid rgb(124, 121, 121);
+    transition: color 0.3s;
+}
+
+.movieContainer label {
+    margin-right: 1rem;
+}
+
+.movieContainer label input[type='checkbox'] {
+    width: 15px;
+    height: 15px;
+}
+
+.movieContainer.active {
+    border-bottom: 3px solid #198847;
+}
+
+.movieContainer .icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.movieContainer .icon.favorite {
+    transition: color 0.3s;
+}
+
+.movieContainer .icon.favorite.active {
+    color: hsla(53, 100%, 45%, 1);
+}
+
+.movieContainer .icon.delete {
+    background-color: rgb(185, 55, 55);
+    border-radius: 4px;
+    padding: 8px;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.movieContainer .icon.delete:hover {
+    background-color: rgb(170, 46, 46);
+
+}
+
+.movieContainer ul {
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+    place-items: center;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+}
+
+.movieContainer ul li {
+    text-align: center;
+}
+
+.movieContainer ul li p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #9b9696;
+}
+
+.movieContainer.active ul li p {
+    color: #ffffff;
+}
+
+.movieContainer ul li small {
+    font-size: 1rem;
+}
