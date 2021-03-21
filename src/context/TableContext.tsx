@@ -28,7 +28,6 @@ export function TableProvider({children}: TableProviderProps) {
     let [totalMinutes, setTotalMinutes] = useState(0);
     let key: string = "listMovies";
 
-    console.log(totalMinutes);
 
     useEffect(()=> {
         countAllMinutes();
@@ -115,7 +114,7 @@ export function TableProvider({children}: TableProviderProps) {
     let hours: number = Math.floor(totalMinutes/60);
     let minutes:number = totalMinutes%60;
 
-    return (hours + " h" + ":" + minutes + " min")
+    return `${hours < 10 ? "0"+hours+" h": " h"} : ${minutes < 10 ? "0"+minutes+" min" : " min"}`
   }
 
   return (
