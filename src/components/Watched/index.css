@@ -1,0 +1,21 @@
+.watchedContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem auto;
+    border-radius: 10px;
+    background-color: #131212;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.411);
+    color: #5c5959;
+    width: 70%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 760px) {
+
+    .watchedContainer {
+        width: 90%;
+    }
+
+}

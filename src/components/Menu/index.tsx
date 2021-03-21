@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './index.css'
@@ -18,22 +17,24 @@ function Menu () {
       <ul className={`menuItems ${menuActive && "active"}`}>
         <Link className="item" to="/">
           <li >
-            <i></i>
             <p>Home</p>
           </li>
         </Link>
-        <li className="item">
-          <i></i>
-          <p>Favoritos</p>
-        </li>
-        <li className="item">
-          <i></i>
-          <p>Assistidos</p>
-        </li>
-        <li className="item">
-          <i></i>
-          <p>Para assistir</p>
-        </li>
+        <Link className="item item-secondary" to="/favorites">
+          <li>
+            <p>Favoritos</p>
+          </li>
+        </Link>
+        <Link className="item item-secondary" to="/watched">
+          <li >
+            <p>Assistidos</p>
+          </li>
+        </Link>
+        <Link className="item item-secondary" to="/later">
+          <li>
+            <p>Para assistir</p>
+          </li>
+        </Link>
       </ul>
       <i onClick={activeToggleMenu} className="fas fa-bars toggleMenu"></i>
     </div>
