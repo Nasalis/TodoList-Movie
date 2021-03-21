@@ -15,7 +15,7 @@ function Table () {
         <h1>Todo</h1>
         <div className="tableMenu">
             <div className="tableStatus">
-              <h3>Minutagem total: {formatTime(totalMinutes)} </h3>
+              <h3>Minutagem total <div>{formatTime(totalMinutes)}</div> </h3>
             </div>
             <Link to="/add">
               <button>Adicionar <i className="fas fa-plus"></i></button>

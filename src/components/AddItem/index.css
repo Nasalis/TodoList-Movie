@@ -74,3 +74,15 @@
     background-color: #299048;
 }
 
+
+@media screen and (max-width: 760px) {
+
+    .addItemContainer {
+        width: 90%;
+    }
+
+    .addItemContainer form {
+        width: 80%;
+    }
+    
+}

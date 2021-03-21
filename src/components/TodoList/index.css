@@ -30,3 +30,14 @@
     padding: 6px 15px;
     font-size: 1.2rem;
 }
+
+@media screen and (max-width: 760px) {
+
+    .searchBar h4 {
+        text-align: center;
+    }
+
+    .searchBar input {
+        width: 100%;
+    }
+}

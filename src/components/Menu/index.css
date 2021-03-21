@@ -50,7 +50,7 @@
     color: #fff;
 }
 
-.menuContainer ul li {
+.menuContainer ul .item-secondary li {
     width: 100%;
     text-align: center;
     padding: 5px 0;
@@ -58,15 +58,72 @@
     transition: all ease 0.3s;
 }
 
-.menuContainer ul li p {
+.menuContainer ul .item-secondary li p {
     font-weight: 400;
     font-size: 1.2rem;
 }
 
-.menuContainer ul li:hover {
+.menuContainer ul .item-secondary li:hover {
     background-color: #206790 ;
 }
 
-.menuContainer ul li:hover p {
+.menuContainer ul .item-secondary li:hover p {
     color: #fff;
+}
+
+.menuContainer .toggleMenu {
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+
+    .menuContainer {
+        width: 90%;
+        height: 100%;
+    }
+
+    .menuContainer .toggleMenu {
+        position: absolute;
+        top: 15px;
+        right: 6%;
+        display: block;
+        padding: 20px;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .menuContainer ul {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        width: 100%;
+        height: 130%;
+        background: #131212;
+        transition: 0.2s;
+    }
+
+    .menuContainer ul.active {
+        left: 0;
+    }
+
+    .menuContainer ul .item {
+        padding: 10px 0;
+        transition: all ease 0.3s;
+    
+    }
+    
+    .menuContainer ul .item li p {
+        font-weight: 600;
+        font-size: 2rem;
+        color: #5c5959;
+    }
+
+    .menuContainer ul .item p {
+        font-size: 2rem;
+    }
 }

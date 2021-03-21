@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import { TableContext } from '../../context/TableContext';
 import { Todo } from '../../types';
 
@@ -11,7 +11,6 @@ interface TodoListProps {
 export default function TodoItem({todo}: TodoListProps) {
 
     const {todos, completedTodo, favoriteMovie, changeSetTodo} = useContext(TableContext)
-
 
     function deleteMovie() {
         changeSetTodo(todos.filter(el => el.name !== todo.name))
@@ -27,15 +26,15 @@ export default function TodoItem({todo}: TodoListProps) {
             </div>
 
             <ul className="infoTitles">
-                <li>
+                <li className="nameField">
                     <p>Nome</p>
                     <small>{todo.name}</small>
                 </li>
-                <li>
+                <li className="directorField">
                     <p>Diretor</p>
                     <small>{todo.director}</small>
                 </li>
-                <li>
+                <li className="runtimeField">
                     <p>Duração</p>
                     <small>{todo.runtime} min</small>
                 </li>
