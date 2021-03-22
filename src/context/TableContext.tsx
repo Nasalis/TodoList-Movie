@@ -101,7 +101,7 @@ export function TableProvider({children}: TableProviderProps) {
         }else{
           todos.map(movie => {
               count += movie.runtime
-              setTotalMinutes(count)
+              return setTotalMinutes(count)
           })
         }
     }

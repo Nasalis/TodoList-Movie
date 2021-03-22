@@ -28,12 +28,14 @@ export default function Favorites() {
                             return element;
                             }
                         }
+                        return ""
                         }).map((value, key) => {
                             if(value.favorite) {
                                 return (
                                     <TodoItem key={key} todo={value}/>
                                 )
                             }
+                            return ""
                         })
                     }
                     

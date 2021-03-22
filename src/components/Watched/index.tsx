@@ -28,12 +28,14 @@ export default function Watched() {
                             return element;
                             }
                         }
+                        return ""
                         }).map((value, key) => {
                             if(value.completed) {
                                 return (
                                     <TodoItem key={key} todo={value}/>
                                 )
                             }
+                            return ""
                         })
                     }
                     

@@ -28,12 +28,14 @@ export default function ToWatchLater() {
                             return element;
                             }
                         }
+                        return ""
                         }).map((value, key) => {
                             if(value.completed === false && value.favorite === false) {
                                 return (
                                     <TodoItem key={key} todo={value}/>
                                 )
                             }
+                            return ""
                         })
                     }
                     

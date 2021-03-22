@@ -24,10 +24,9 @@ export default function TodoList() {
                         return element;
                         }
                     }
+                    return ""
                     }).map((value, key) => {
-                    return (
-                        <TodoItem key={key} todo={value}/>
-                    )
+                        return <TodoItem key={key} todo={value}/>
                     })
                 }
                 
