@@ -31,14 +31,17 @@ export function TableProvider({children}: TableProviderProps) {
 
     useEffect(()=> {
         countAllMinutes();
+        // eslint-disable-next-line
     }, [todos.length])
 
     useEffect(() => {
       getLocalTodos();
+      // eslint-disable-next-line
     }, []);
 
     useEffect(() => {
       saveLocalTodos();
+      // eslint-disable-next-line
     }, [todos])
 
     // ------------------- Local Storage --------------- //
