@@ -114,7 +114,7 @@ export function TableProvider({children}: TableProviderProps) {
     let hours: number = Math.floor(totalMinutes/60);
     let minutes:number = totalMinutes%60;
 
-    return `${hours < 10 ? "0"+hours+" h": " h"} : ${minutes < 10 ? "0"+minutes+" min" : " min"}`
+    return `${hours < 10 ? "0"+hours+" h": hours + " h"} : ${minutes < 10 ? "0"+minutes+" min" :  minutes + " min"}`
   }
 
   return (
