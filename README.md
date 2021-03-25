@@ -15,7 +15,7 @@
 5. FontAwesomeIcons
 
 ## Como instalar
-Abra o seu terminal e clone a pasta do projeto na sua máquina:
+Abra o seu terminal e clone a pasta do projeto na sua máquina:  
 ``` git clone https://github.com/Nasalis/TodoList-Movie.git ```
 
 Use um gerenciador de pacotes de sua escolha para instalar todas as dependências:
